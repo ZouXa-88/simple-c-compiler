@@ -1,0 +1,954 @@
+{
+  "name": "FunctionList",
+  "children": [
+    {
+      "name": "Function",
+      "value": "calculate_square",
+      "children": [
+        {
+          "name": "ReturnDatatype",
+          "value": "int"
+        },
+        {
+          "name": "ParametersDeclaration",
+          "children": [
+            {
+              "name": "ParameterList",
+              "children": [
+                {
+                  "name": "Parameter",
+                  "children": [
+                    {
+                      "name": "DeclarationDatatype",
+                      "value": "int"
+                    },
+                    {
+                      "name": "Identifier",
+                      "value": "num"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CompoundStatement",
+          "children": [
+            {
+              "name": "StatementList",
+              "children": [
+                {
+                  "name": "JumpStatement",
+                  "value": "return",
+                  "children": [
+                    {
+                      "name": "ArithmeticExpression",
+                      "value": "*",
+                      "children": [
+                        {
+                          "name": "Identifier",
+                          "value": "num"
+                        },
+                        {
+                          "name": "Identifier",
+                          "value": "num"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Function",
+      "value": "print_numbers",
+      "children": [
+        {
+          "name": "ReturnDatatype",
+          "value": "void"
+        },
+        {
+          "name": "ParametersDeclaration",
+          "children": [
+            {
+              "name": "ParameterList",
+              "children": [
+                {
+                  "name": "Parameter",
+                  "children": [
+                    {
+                      "name": "DeclarationDatatype",
+                      "value": "int"
+                    },
+                    {
+                      "name": "Identifier",
+                      "value": "start"
+                    }
+                  ]
+                },
+                {
+                  "name": "Parameter",
+                  "children": [
+                    {
+                      "name": "DeclarationDatatype",
+                      "value": "int"
+                    },
+                    {
+                      "name": "Identifier",
+                      "value": "end"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CompoundStatement",
+          "children": [
+            {
+              "name": "StatementList",
+              "children": [
+                {
+                  "name": "IfStatement",
+                  "children": [
+                    {
+                      "name": "RelationalExpression",
+                      "value": ">",
+                      "children": [
+                        {
+                          "name": "Identifier",
+                          "value": "start"
+                        },
+                        {
+                          "name": "Identifier",
+                          "value": "end"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "CompoundStatement",
+                      "children": [
+                        {
+                          "name": "StatementList",
+                          "children": [
+                            {
+                              "name": "ExpressionStatement",
+                              "children": [
+                                {
+                                  "name": "FunctionCall",
+                                  "value": "printf",
+                                  "children": [
+                                    {
+                                      "name": "ArgumentList",
+                                      "children": [
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "ConstantString",
+                                              "value": "Error: Start number cannot be greater than end number.\n"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "JumpStatement",
+                              "value": "return"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "printf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "Numbers from %d to %d: \n"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "Identifier",
+                                  "value": "start"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "Identifier",
+                                  "value": "end"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ForStatement",
+                  "children": [
+                    {
+                      "name": "DeclarationStatement",
+                      "children": [
+                        {
+                          "name": "DeclarationDatatype",
+                          "value": "int"
+                        },
+                        {
+                          "name": "DeclaratorList",
+                          "children": [
+                            {
+                              "name": "DeclaratorWithValue",
+                              "value": "i",
+                              "children": [
+                                {
+                                  "name": "Identifier",
+                                  "value": "start"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "ExpressionStatement",
+                      "children": [
+                        {
+                          "name": "RelationalExpression",
+                          "value": "<=",
+                          "children": [
+                            {
+                              "name": "Identifier",
+                              "value": "i"
+                            },
+                            {
+                              "name": "Identifier",
+                              "value": "end"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "ExpressionStatement",
+                      "children": [
+                        {
+                          "name": "PostfixExpression",
+                          "value": "++",
+                          "children": [
+                            {
+                              "name": "Identifier",
+                              "value": "i"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "CompoundStatement",
+                      "children": [
+                        {
+                          "name": "StatementList",
+                          "children": [
+                            {
+                              "name": "ExpressionStatement",
+                              "children": [
+                                {
+                                  "name": "FunctionCall",
+                                  "value": "printf",
+                                  "children": [
+                                    {
+                                      "name": "ArgumentList",
+                                      "children": [
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "ConstantString",
+                                              "value": "%d "
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "Identifier",
+                                              "value": "i"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Function",
+      "value": "main",
+      "children": [
+        {
+          "name": "ReturnDatatype",
+          "value": "int"
+        },
+        {
+          "name": "ParametersDeclaration"
+        },
+        {
+          "name": "CompoundStatement",
+          "children": [
+            {
+              "name": "StatementList",
+              "children": [
+                {
+                  "name": "DeclarationStatement",
+                  "children": [
+                    {
+                      "name": "DeclarationDatatype",
+                      "value": "int"
+                    },
+                    {
+                      "name": "DeclaratorList",
+                      "children": [
+                        {
+                          "name": "Declarator",
+                          "value": "num1"
+                        },
+                        {
+                          "name": "Declarator",
+                          "value": "num2"
+                        },
+                        {
+                          "name": "Declarator",
+                          "value": "choice"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "printf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "Enter two numbers: "
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "scanf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "%d %d"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "PrefixExpression",
+                                  "value": "&",
+                                  "children": [
+                                    {
+                                      "name": "Identifier",
+                                      "value": "num1"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "PrefixExpression",
+                                  "value": "&",
+                                  "children": [
+                                    {
+                                      "name": "Identifier",
+                                      "value": "num2"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "printf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "Menu:\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "printf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "1. Calculate square\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "printf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "2. Print numbers between them\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "printf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "Enter your choice: "
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "scanf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "%d"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "PrefixExpression",
+                                  "value": "&",
+                                  "children": [
+                                    {
+                                      "name": "Identifier",
+                                      "value": "choice"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "WhileStatement",
+                  "children": [
+                    {
+                      "name": "LogicalExpression",
+                      "value": "||",
+                      "children": [
+                        {
+                          "name": "RelationalExpression",
+                          "value": "<",
+                          "children": [
+                            {
+                              "name": "Identifier",
+                              "value": "choice"
+                            },
+                            {
+                              "name": "ConstantNumber",
+                              "value": "1"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "RelationalExpression",
+                          "value": ">",
+                          "children": [
+                            {
+                              "name": "Identifier",
+                              "value": "choice"
+                            },
+                            {
+                              "name": "ConstantNumber",
+                              "value": "2"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "CompoundStatement",
+                      "children": [
+                        {
+                          "name": "StatementList",
+                          "children": [
+                            {
+                              "name": "ExpressionStatement",
+                              "children": [
+                                {
+                                  "name": "FunctionCall",
+                                  "value": "printf",
+                                  "children": [
+                                    {
+                                      "name": "ArgumentList",
+                                      "children": [
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "ConstantString",
+                                              "value": "Invalid choice. Please enter 1 or 2: "
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "ExpressionStatement",
+                              "children": [
+                                {
+                                  "name": "FunctionCall",
+                                  "value": "scanf",
+                                  "children": [
+                                    {
+                                      "name": "ArgumentList",
+                                      "children": [
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "ConstantString",
+                                              "value": "%d"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "PrefixExpression",
+                                              "value": "&",
+                                              "children": [
+                                                {
+                                                  "name": "Identifier",
+                                                  "value": "choice"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "IfElseStatement",
+                  "children": [
+                    {
+                      "name": "RelationalExpression",
+                      "value": "==",
+                      "children": [
+                        {
+                          "name": "Identifier",
+                          "value": "choice"
+                        },
+                        {
+                          "name": "ConstantNumber",
+                          "value": "1"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "CompoundStatement",
+                      "children": [
+                        {
+                          "name": "StatementList",
+                          "children": [
+                            {
+                              "name": "DeclarationStatement",
+                              "children": [
+                                {
+                                  "name": "DeclarationDatatype",
+                                  "value": "int"
+                                },
+                                {
+                                  "name": "DeclaratorList",
+                                  "children": [
+                                    {
+                                      "name": "DeclaratorWithValue",
+                                      "value": "square1",
+                                      "children": [
+                                        {
+                                          "name": "FunctionCall",
+                                          "value": "calculate_square",
+                                          "children": [
+                                            {
+                                              "name": "ArgumentList",
+                                              "children": [
+                                                {
+                                                  "name": "Argument",
+                                                  "children": [
+                                                    {
+                                                      "name": "Identifier",
+                                                      "value": "num1"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "DeclarationStatement",
+                              "children": [
+                                {
+                                  "name": "DeclarationDatatype",
+                                  "value": "int"
+                                },
+                                {
+                                  "name": "DeclaratorList",
+                                  "children": [
+                                    {
+                                      "name": "DeclaratorWithValue",
+                                      "value": "square2",
+                                      "children": [
+                                        {
+                                          "name": "FunctionCall",
+                                          "value": "calculate_square",
+                                          "children": [
+                                            {
+                                              "name": "ArgumentList",
+                                              "children": [
+                                                {
+                                                  "name": "Argument",
+                                                  "children": [
+                                                    {
+                                                      "name": "Identifier",
+                                                      "value": "num2"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "ExpressionStatement",
+                              "children": [
+                                {
+                                  "name": "FunctionCall",
+                                  "value": "printf",
+                                  "children": [
+                                    {
+                                      "name": "ArgumentList",
+                                      "children": [
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "ConstantString",
+                                              "value": "Square of %d: %d\n"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "Identifier",
+                                              "value": "num1"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "Identifier",
+                                              "value": "square1"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "ExpressionStatement",
+                              "children": [
+                                {
+                                  "name": "FunctionCall",
+                                  "value": "printf",
+                                  "children": [
+                                    {
+                                      "name": "ArgumentList",
+                                      "children": [
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "ConstantString",
+                                              "value": "Square of %d: %d\n"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "Identifier",
+                                              "value": "num2"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "Identifier",
+                                              "value": "square2"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "CompoundStatement",
+                      "children": [
+                        {
+                          "name": "StatementList",
+                          "children": [
+                            {
+                              "name": "ExpressionStatement",
+                              "children": [
+                                {
+                                  "name": "FunctionCall",
+                                  "value": "print_numbers",
+                                  "children": [
+                                    {
+                                      "name": "ArgumentList",
+                                      "children": [
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "Identifier",
+                                              "value": "num1"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "Identifier",
+                                              "value": "num2"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

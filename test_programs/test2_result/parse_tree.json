@@ -1,0 +1,799 @@
+{
+  "name": "FunctionList",
+  "children": [
+    {
+      "name": "Function",
+      "value": "printOddNumbers",
+      "children": [
+        {
+          "name": "ReturnDatatype",
+          "value": "void"
+        },
+        {
+          "name": "ParametersDeclaration",
+          "children": [
+            {
+              "name": "ParameterList",
+              "children": [
+                {
+                  "name": "Parameter",
+                  "children": [
+                    {
+                      "name": "DeclarationDatatype",
+                      "value": "int"
+                    },
+                    {
+                      "name": "Identifier",
+                      "value": "limit"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CompoundStatement",
+          "children": [
+            {
+              "name": "StatementList",
+              "children": [
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "printf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "Using for-loop:\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ForStatement",
+                  "children": [
+                    {
+                      "name": "DeclarationStatement",
+                      "children": [
+                        {
+                          "name": "DeclarationDatatype",
+                          "value": "int"
+                        },
+                        {
+                          "name": "DeclaratorList",
+                          "children": [
+                            {
+                              "name": "DeclaratorWithValue",
+                              "value": "i",
+                              "children": [
+                                {
+                                  "name": "ConstantNumber",
+                                  "value": "1"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "ExpressionStatement",
+                      "children": [
+                        {
+                          "name": "RelationalExpression",
+                          "value": "<=",
+                          "children": [
+                            {
+                              "name": "Identifier",
+                              "value": "i"
+                            },
+                            {
+                              "name": "Identifier",
+                              "value": "limit"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "ExpressionStatement",
+                      "children": [
+                        {
+                          "name": "PostfixExpression",
+                          "value": "++",
+                          "children": [
+                            {
+                              "name": "Identifier",
+                              "value": "i"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "CompoundStatement",
+                      "children": [
+                        {
+                          "name": "StatementList",
+                          "children": [
+                            {
+                              "name": "IfStatement",
+                              "children": [
+                                {
+                                  "name": "RelationalExpression",
+                                  "value": "==",
+                                  "children": [
+                                    {
+                                      "name": "ArithmeticExpression",
+                                      "value": "%",
+                                      "children": [
+                                        {
+                                          "name": "Identifier",
+                                          "value": "i"
+                                        },
+                                        {
+                                          "name": "ConstantNumber",
+                                          "value": "2"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "ConstantNumber",
+                                      "value": "0"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "CompoundStatement",
+                                  "children": [
+                                    {
+                                      "name": "StatementList",
+                                      "children": [
+                                        {
+                                          "name": "JumpStatement",
+                                          "value": "continue"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "ExpressionStatement",
+                              "children": [
+                                {
+                                  "name": "FunctionCall",
+                                  "value": "printf",
+                                  "children": [
+                                    {
+                                      "name": "ArgumentList",
+                                      "children": [
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "ConstantString",
+                                              "value": "%d "
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "Identifier",
+                                              "value": "i"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "printf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "printf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "Using while-loop:\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "DeclarationStatement",
+                  "children": [
+                    {
+                      "name": "DeclarationDatatype",
+                      "value": "int"
+                    },
+                    {
+                      "name": "DeclaratorList",
+                      "children": [
+                        {
+                          "name": "DeclaratorWithValue",
+                          "value": "j",
+                          "children": [
+                            {
+                              "name": "ConstantNumber",
+                              "value": "1"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "WhileStatement",
+                  "children": [
+                    {
+                      "name": "RelationalExpression",
+                      "value": "<=",
+                      "children": [
+                        {
+                          "name": "Identifier",
+                          "value": "j"
+                        },
+                        {
+                          "name": "Identifier",
+                          "value": "limit"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "CompoundStatement",
+                      "children": [
+                        {
+                          "name": "StatementList",
+                          "children": [
+                            {
+                              "name": "IfStatement",
+                              "children": [
+                                {
+                                  "name": "RelationalExpression",
+                                  "value": "==",
+                                  "children": [
+                                    {
+                                      "name": "ArithmeticExpression",
+                                      "value": "%",
+                                      "children": [
+                                        {
+                                          "name": "Identifier",
+                                          "value": "j"
+                                        },
+                                        {
+                                          "name": "ConstantNumber",
+                                          "value": "2"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "ConstantNumber",
+                                      "value": "0"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "CompoundStatement",
+                                  "children": [
+                                    {
+                                      "name": "StatementList",
+                                      "children": [
+                                        {
+                                          "name": "ExpressionStatement",
+                                          "children": [
+                                            {
+                                              "name": "PostfixExpression",
+                                              "value": "++",
+                                              "children": [
+                                                {
+                                                  "name": "Identifier",
+                                                  "value": "j"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "JumpStatement",
+                                          "value": "continue"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "ExpressionStatement",
+                              "children": [
+                                {
+                                  "name": "FunctionCall",
+                                  "value": "printf",
+                                  "children": [
+                                    {
+                                      "name": "ArgumentList",
+                                      "children": [
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "ConstantString",
+                                              "value": "%d "
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "Identifier",
+                                              "value": "j"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "ExpressionStatement",
+                              "children": [
+                                {
+                                  "name": "PostfixExpression",
+                                  "value": "++",
+                                  "children": [
+                                    {
+                                      "name": "Identifier",
+                                      "value": "j"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "printf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "printf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "Using do-while-loop:\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "DeclarationStatement",
+                  "children": [
+                    {
+                      "name": "DeclarationDatatype",
+                      "value": "int"
+                    },
+                    {
+                      "name": "DeclaratorList",
+                      "children": [
+                        {
+                          "name": "DeclaratorWithValue",
+                          "value": "k",
+                          "children": [
+                            {
+                              "name": "ConstantNumber",
+                              "value": "1"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "DoWhileStatement",
+                  "children": [
+                    {
+                      "name": "CompoundStatement",
+                      "children": [
+                        {
+                          "name": "StatementList",
+                          "children": [
+                            {
+                              "name": "IfStatement",
+                              "children": [
+                                {
+                                  "name": "RelationalExpression",
+                                  "value": "==",
+                                  "children": [
+                                    {
+                                      "name": "ArithmeticExpression",
+                                      "value": "%",
+                                      "children": [
+                                        {
+                                          "name": "Identifier",
+                                          "value": "k"
+                                        },
+                                        {
+                                          "name": "ConstantNumber",
+                                          "value": "2"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "ConstantNumber",
+                                      "value": "0"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "CompoundStatement",
+                                  "children": [
+                                    {
+                                      "name": "StatementList",
+                                      "children": [
+                                        {
+                                          "name": "ExpressionStatement",
+                                          "children": [
+                                            {
+                                              "name": "PostfixExpression",
+                                              "value": "++",
+                                              "children": [
+                                                {
+                                                  "name": "Identifier",
+                                                  "value": "k"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "JumpStatement",
+                                          "value": "continue"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "ExpressionStatement",
+                              "children": [
+                                {
+                                  "name": "FunctionCall",
+                                  "value": "printf",
+                                  "children": [
+                                    {
+                                      "name": "ArgumentList",
+                                      "children": [
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "ConstantString",
+                                              "value": "%d "
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Argument",
+                                          "children": [
+                                            {
+                                              "name": "Identifier",
+                                              "value": "k"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "ExpressionStatement",
+                              "children": [
+                                {
+                                  "name": "PostfixExpression",
+                                  "value": "++",
+                                  "children": [
+                                    {
+                                      "name": "Identifier",
+                                      "value": "k"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "RelationalExpression",
+                      "value": "<=",
+                      "children": [
+                        {
+                          "name": "Identifier",
+                          "value": "k"
+                        },
+                        {
+                          "name": "Identifier",
+                          "value": "limit"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "printf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Function",
+      "value": "main",
+      "children": [
+        {
+          "name": "ReturnDatatype",
+          "value": "int"
+        },
+        {
+          "name": "ParametersDeclaration"
+        },
+        {
+          "name": "CompoundStatement",
+          "children": [
+            {
+              "name": "StatementList",
+              "children": [
+                {
+                  "name": "DeclarationStatement",
+                  "children": [
+                    {
+                      "name": "DeclarationDatatype",
+                      "value": "int"
+                    },
+                    {
+                      "name": "DeclaratorList",
+                      "children": [
+                        {
+                          "name": "Declarator",
+                          "value": "limit"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "printf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "Enter a limit to print odd numbers below it: "
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "scanf",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "ConstantString",
+                                  "value": "%d"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "PrefixExpression",
+                                  "value": "&",
+                                  "children": [
+                                    {
+                                      "name": "Identifier",
+                                      "value": "limit"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ExpressionStatement",
+                  "children": [
+                    {
+                      "name": "FunctionCall",
+                      "value": "printOddNumbers",
+                      "children": [
+                        {
+                          "name": "ArgumentList",
+                          "children": [
+                            {
+                              "name": "Argument",
+                              "children": [
+                                {
+                                  "name": "Identifier",
+                                  "value": "limit"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
